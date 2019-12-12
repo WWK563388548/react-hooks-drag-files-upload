@@ -1,9 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import FilesUpload from './FilesUpload';
 
 const App = () => {
+
+  const onUpload = (files) => {
+    console.log(files);
+  };
+
   return (
-    <div className="App">
-      ssddsd
+    <div>
+        <FilesUpload
+            onUpload={onUpload}
+        />
     </div>
   );
 }
